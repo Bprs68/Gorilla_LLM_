@@ -26,7 +26,7 @@ def extract_code_from_output(output):
     return code.strip()
 
 def extract_code_from_output_as_newlines(output):
-    code_marker = "<<<code>>>:"
+    code_marker = "code>>>:"
     code_start = output.find(code_marker) + len(code_marker)
     code = output[code_start:]
         
